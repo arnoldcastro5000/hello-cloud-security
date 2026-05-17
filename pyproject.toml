@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "hello-cloud-security"
+version = "0.1.0"
+description = "Portfolio starter for cloud security tooling"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+hello-cloud-security = "hello_cloud_security.app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
